@@ -1,0 +1,30 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "65f933facc979b6a74f77d4f715915c0"
+application_url = "http://localhost:2200/"
+embedded = true
+name = "aman-nextjs"
+handle = "aman-nextjs"
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-6e6df1c6.myshopify.com"
+include_config_on_deploy = true
+
+[access.admin]
+direct_api_mode = "offline"
+embedded_app_direct_api_access = true
+
+[webhooks]
+api_version = "2025-01"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customer_events,read_orders,read_products,read_script_tags,read_themes,write_pixels,write_script_tags,write_themes"
+use_legacy_install_flow = false
+
+[auth]
+redirect_urls = [ "http://localhost:2200/api/auth" ]
+
+[pos]
+embedded = false

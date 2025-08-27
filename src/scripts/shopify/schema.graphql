@@ -1,0 +1,16 @@
+query getProducts($first: Int!) {
+  products(first: $first) {
+    nodes {
+      id
+      title
+      tags
+    }
+  }
+}
+
+query ShopQuery {
+  shop {
+    name
+    id
+  }
+}
